@@ -1,0 +1,287 @@
+@import "tinyMce/style";
+
+.lang-active{
+  color: #cccccc;
+}
+input[readonly].form-control.form-control-solid{
+  color:#ccc;
+}
+.btn-sm{
+  padding: 7px 16px;
+  min-height: 40px;
+}
+.form-control{
+  height: 40px;
+  font-size: 14px !important;
+  &.phone-verify-right{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  &.phone-verify-left{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+.btn{
+  &.phone-verify-right{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  &.phone-verify-left{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+.breadcrumb-item{
+  .svg-icon{
+    vertical-align: text-bottom;
+  }
+}
+
+/* Feature/SC-42 Start */
+
+/* Common Start */
+.border-primary{
+  border: 1px solid #b6bdc5 !important;
+}
+.border-primary-no-left{
+  border-top: 1px solid #b6bdc5 !important;
+  border-bottom: 1px solid #b6bdc5 !important;
+  border-right: 1px solid #b6bdc5 !important;
+}
+.custom-form-control{
+  height: 40px;
+}
+.fs-7, .btn-sm{
+  font-size: 14px !important;
+}
+.fs-6{
+  font-size: 15px !important;
+}
+.fs-3{
+  font-size: 18px !important;
+}
+.fs-4{
+  font-size: 17px !important;
+}
+.form-control.is-invalid{
+  background-position: right 40px center;
+}
+.daterangepicker.opensright:before {
+  right: 99px !important;
+  left: auto !important;
+}
+.daterangepicker.opensright:after {
+  right: 100px !important;
+  left: auto !important;
+}
+/* Common End */
+
+/* Table Start */
+.productTable {
+  thead tr th:nth-child(4){
+    text-align: right;
+  }
+}
+.table thead th {
+  vertical-align: middle;
+}
+/*  Table End */
+
+/* ProductCategoriesBlock Start */
+.productCategories{
+  .dropdown{
+    overflow-y: auto;
+    -ms-flex: 1;
+    flex: 1;
+    height: 200px;
+    ul{
+      a {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &.active{
+          svg{
+            color: #fff;
+          }
+        }
+        svg{
+          color: #a1a5b7;
+        }
+      }
+    }
+  }
+  .formGroup{
+    position: relative;
+    svg{
+      position: absolute;
+      right: 20px;
+      top: 12px;
+      color: #a1a5b7;
+    }
+  }
+}
+/* ProductCategoriesBlock End */
+
+/* Login Start */
+#kt_login_signin_form {
+  .fv-row .input-text{
+    position: relative;
+    svg{
+      position: absolute;
+      top: 18px;
+      right: 20px;
+      cursor: pointer;
+    }
+  }
+}
+.showpass::-ms-reveal,
+.showpass::-ms-clear {
+  display: none;
+}
+/* Login End  */
+
+/* Breadcrumb Start  */
+.breadcrumb .breadcrumb-item:last-child{
+  width: 400px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* Breadcrumb End  */
+
+/* Sort Table Start  */
+.table-responsive{
+  thead{
+    tr th{
+      &.w-product{
+        width: 150px;
+      }
+      &.w-categories{
+        width: 100px;
+      }
+      &.w-brand{
+        width: 100px;
+      }
+      &.w-sell{
+        width: 120px;
+      }
+      &.w-mobile-product{
+        min-width: 200px;
+      }
+      &.w-mobile-categories{
+        min-width: 100px;
+      }
+      &.w-mobile-brand{
+        min-width: 100px;
+      }
+      &.w-mobile-sell{
+        min-width: 120px;
+      }
+      .icon-sort{
+        svg.active{
+          opacity: 0.3;
+        }
+      }
+    }
+  }
+}
+.menu-sub-dropdown{
+  &.active{
+    display: block;
+    right: 28px;
+    top: 75px;
+    position: absolute;
+  }
+}
+/* Sort Table End  */
+
+@media(max-width: 575px){
+  .ProductSearch{
+    .position-relative{
+      margin-bottom: 15px;
+    }
+  }
+  .product_info .btn{
+    margin-top: 15px;
+  }
+  .thong_tin_thanh_toan{
+    margin-top: 15px;
+  }
+}
+@media(min-width: 992px){
+  #kt_content .toolbar{
+    display: none;
+  }
+}
+@media(max-width: 991.98px){
+  #kt_login_signin_form .fv-row .input-text svg{
+    top: 15px;
+  }
+}
+@media(min-width: 1200px) and (max-width: 1366px){
+  .card .card-body{
+    padding: 15px;
+  }
+  .card .card-header{
+    padding: 15px 15px 0 15px;
+  }
+  .fs-7, .btn-sm {
+    font-size: 13px !important;
+  }
+  .fs-6{
+    font-size: 13px !important;
+  }
+  .fs-3{
+    font-size: 16px !important;
+  }
+  .fs-4{
+    font-size: 15px !important;
+  }
+  h3,h2,h4{
+    font-size: 18px;
+  }
+  .page-item .page-link{
+    height: 30px;
+    min-width: 30px;
+  }
+  .page-item{
+    margin-right: 0;
+  }
+}
+/* Feature/SC-42 End */
+
+/* Hide number input arrows */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.table-loading {
+  position: relative;
+}
+.table-loading-message {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 0.475rem;
+  box-shadow: 0px 0px 50px 0px rgb(82 63 105 / 15%);
+  background-color: #ffffff;
+  color: #7E8299;
+  font-weight: 500;
+  margin: 0 !important;
+  width: auto;
+  padding: 1rem 2rem !important;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.table-loading .table-loading-message {
+  display: block;
+}

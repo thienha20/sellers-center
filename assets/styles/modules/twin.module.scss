@@ -1,0 +1,37 @@
+.cssfxTwinSpin {
+  display: flex;
+  width: var(--width);
+  height: var(--height);
+  border: 3px solid transparent;
+  border-top-color: var(--color);
+  border-bottom-color: var(--color);
+  border-radius: 50%;
+  animation: cssfxTwinSpin 1.5s linear infinite;
+}
+
+.cssfxTwinSpin:before {
+  content: "";
+  display: block;
+  margin: auto;
+  width: calc(var(--width) * 0.75 / 3.5);
+  height: calc(var(--width) * 0.75 / 3.5);
+  border: 3px solid var(--color);
+  border-radius: 50%;
+  animation: cssfxTwinSpinPulse var(--duration) alternate ease-in-out
+  infinite;
+}
+
+@keyframes cssfxTwinSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes cssfxTwinSpinPulse {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
